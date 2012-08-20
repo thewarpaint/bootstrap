@@ -1,0 +1,39 @@
+table {
+	.header {
+		cursor: pointer;
+		
+		&:after {
+			content: "";
+			float: right;
+			margin-top: 7px;
+			border-width: 0 4px 4px;
+			border-style: solid;
+			border-color: #ccc transparent;
+			visibility: hidden;
+		}
+
+		&:hover:after {
+			visibility: visible;
+		}
+	}
+
+	.headerSortUp, .headerSortDown {
+		background-color: @grayLighter;
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+		color: @blue;
+
+		&:after {
+			visibility: visible;
+			border-color: @grayDark transparent;
+			.box-shadow(none);
+			.opacity(60);
+		}
+	}
+
+	.headerSortUp:after {
+		border-bottom: none;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 4px solid @grayDark;
+	}
+}
