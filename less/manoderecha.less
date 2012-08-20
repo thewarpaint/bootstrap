@@ -1,0 +1,68 @@
+// Striped buttons
+// --------------------------------------------------
+.btn-striped[disabled] {
+    #gradient > .striped(auto, -45deg, .15);
+    .background-size(40px 40px);
+    .progress.active .bar;
+    .opacity(70);
+
+    &:hover {
+	.transition(none);
+    }
+}
+
+// Active and waiting icons
+// --------------------------------------------------
+button[disabled] [class^="icon-"].active {
+	display: none !important;
+}
+
+button [class^="icon-"].waiting {
+	display: none !important;
+}
+
+button[disabled] [class^="icon-"].waiting {
+	display: inline-block !important;
+}
+
+// Show nav on hover (fix)
+// --------------------------------------------------
+ul.nav li.dropdown:hover ul.dropdown-menu {
+	display: block;
+}
+
+.navbar .dropdown-menu:before, .navbar .dropdown-menu:after {
+	border: 0 !important;
+	content: "";
+}
+
+.navbar .dropdown-menu {
+	.border-radius(0 0 4px 4px);
+	margin-top: 0px;
+	border-top-color: #000;
+}
+
+.navbar .dropdown-menu a {
+	padding: 5px 15px;
+}
+
+// Labels on menu entries
+// --------------------------------------------------
+.dropdown-menu span.label {
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}
+
+// White labels, used in md alarms
+// --------------------------------------------------
+.label-white, .badge-white {
+	background-color: @white;
+}
+
+// Disabled table row
+// --------------------------------------------------
+tr.disabled {
+	color: #999;
+	background-color: #eee;
+}
