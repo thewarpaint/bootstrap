@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>manoderecha · Twitter Bootstrap</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Le styles -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="assets/css/docs.css" rel="stylesheet">
+		<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="assets/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+	</head>
+
+	<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+
+		<!-- Navbar
+		  ================================================== -->
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="brand" href="./index.html">Bootstrap</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="">
+								<a href="./index.html">Overview</a>
+							</li>
+							<li class="">
+								<a href="./scaffolding.html">Scaffolding</a>
+							</li>
+							<li class="">
+								<a href="./base-css.html">Base CSS</a>
+							</li>
+							<li class="">
+								<a href="./components.html">Components</a>
+							</li>
+							<li class="">
+								<a href="./javascript.html">Javascript plugins</a>
+							</li>
+							<li class="">
+								<a href="./less.html">Using LESS</a>
+							</li>
+							<li class="active">
+								<a href="./manoderecha.html">manoderecha</a>
+							</li>
+							<li class="divider-vertical"></li>
+							<li class="">
+								<a href="./download.html">Customize</a>
+							</li>
+							<li class="">
+								<a href="./examples.html">Examples</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<!-- Masthead
+			================================================== -->
+			<header class="jumbotron subhead" id="overview">
+				<h1>manoderecha</h1>
+				<p class="lead">Estilos específicos para la famosa aplicación de administración de proyectos.</p>
+				<div class="subnav">
+					<ul class="nav nav-pills">
+						<li><a href="#buttons">Botones</a></li>
+						<li><a href="#tablesorter">Tablesorter</a></li>
+					</ul>
+				</div>
+			</header>
+
+
+			<!-- Buttons
+			================================================== -->
+			<section id="buttons">
+				<div class="page-header">
+					<h1>Botones</h1>
+				</div>
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Desactivado</th>
+							<th>class="" disabled="disabled"</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><button class="btn btn-striped" href="#" disabled="disabled"><i class="icon-time"></i> Default</button></td>
+							<td><code>btn</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-primary btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Primary</button></td>
+							<td><code>btn btn-primary</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-info btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Info</button></td>
+							<td><code>btn btn-info</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-success btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Success</button></td>
+							<td><code>btn btn-success</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-warning btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Warning</button></td>
+							<td><code>btn btn-warning</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-danger btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Danger</button></td>
+							<td><code>btn btn-danger</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-inverse btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Inverse</button></td>
+							<td><code>btn btn-inverse</code></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="row">
+					<div class="span4">
+						<h3>¿Cómo funciona?</h3>
+						<p>Sólo es necesario agregar la clase <code>btn-striped</code> al botón y asignar el atributo <code>disabled="disabled"</code>.</p>
+					</div>
+					<div class="span4">
+						<h3>Iconos</h3>
+						<p>Los iconos con la clase <code>.active</code> se ocultarán cuando el botón esté desactivado.</p>
+						<p>Los iconos con la clase <code>.waiting</code> se mostrarán cuando el botón esté desactivado.</p>
+					</div>
+					<div class="span4">
+						<h3>CSS</h3>
+						<p>El CSS es bastante básico, no utiliza imágenes por lo que es bastante ligero y flexible.</p>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Tablesorter
+			================================================== -->
+			<section id="tablesorter">
+				<div class="page-header">
+					<h1>Tablesorter</h1>
+				</div>
+				<table class="table table-bordered table-striped tablesorter">
+					<thead>
+						<tr>
+							<th>Lorem</th>
+							<th>Ipsum</th>
+							<th>Dolor sit amen</th>
+							<th>Dolore magna aliqua</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>consectetur</td>
+							<td>6.45</td>
+							<td>2014-12-20</td>
+							<td>Sed ut perspiciatis unde omnis iste natus error.</td>
+						</tr>
+						<tr>
+							<td>adipisicing elit</td>
+							<td>7.84</td>
+							<td>1978-11-15</td>
+							<td>Error sit voluptatem accusantium doloremque.</td>
+						</tr>
+						<tr>
+							<td>incididunt ut labore</td>
+							<td>9.51</td>
+							<td>2001-01-21</td>
+							<td>Nemo enim ipsam voluptatem quia voluptas.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="row">
+					<div class="span4">
+						<h3>Estilos para el plugin Tablesorter</h3>
+						<p>El plugin Tablesorter para jQuery se integra inmediatamente al framework.</p>
+					</div>
+					<div class="span4">
+						<h3>Plugin</h3>
+						<p><a href="http://tablesorter.com/docs/#Download">Puedes descargar este componente aquí.</a></p>
+					</div>
+					<div class="span4">
+						<h3>CSS</h3>
+						<p>El CSS es muy básico, no utiliza imágenes por lo que es bastante ligero y flexible.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer
+			 ================================================== -->
+			<footer class="footer">
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+				<p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+				<p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+			</footer>
+
+		</div><!-- /container -->
+
+
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/jquery.tablesorter.min.js"></script>
+		<script src="assets/js/google-code-prettify/prettify.js"></script>
+		<script src="assets/js/bootstrap-transition.js"></script>
+		<script src="assets/js/bootstrap-alert.js"></script>
+		<script src="assets/js/bootstrap-modal.js"></script>
+		<script src="assets/js/bootstrap-dropdown.js"></script>
+		<script src="assets/js/bootstrap-scrollspy.js"></script>
+		<script src="assets/js/bootstrap-tab.js"></script>
+		<script src="assets/js/bootstrap-tooltip.js"></script>
+		<script src="assets/js/bootstrap-popover.js"></script>
+		<script src="assets/js/bootstrap-button.js"></script>
+		<script src="assets/js/bootstrap-collapse.js"></script>
+		<script src="assets/js/bootstrap-carousel.js"></script>
+		<script src="assets/js/bootstrap-typeahead.js"></script>
+		<script src="assets/js/application.js"></script>
+		<script src="assets/js/manoderecha.js"></script>
+	</body>
+</html>

@@ -4962,6 +4962,123 @@ a.badge:hover {
   color: inherit;
 }
 
+.btn-striped[disabled] {
+  background-color: auto;
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  -webkit-background-size: 40px 40px;
+     -moz-background-size: 40px 40px;
+       -o-background-size: 40px 40px;
+          background-size: 40px 40px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+
+.btn-striped[disabled]:hover {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+button[disabled] [class^="icon-"].active {
+  display: none !important;
+}
+
+button [class^="icon-"].waiting {
+  display: none !important;
+}
+
+button[disabled] [class^="icon-"].waiting {
+  display: inline-block !important;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-menu:before,
+.navbar .dropdown-menu:after {
+  border: 0 !important;
+  content: "";
+}
+
+.navbar .dropdown-menu {
+  margin-top: 0;
+  border-top-color: #000;
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.navbar .dropdown-menu a {
+  padding: 5px 15px;
+}
+
+.dropdown-menu span.label {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+
+.label-white,
+.badge-white {
+  background-color: #ffffff;
+}
+
+table .header {
+  cursor: pointer;
+}
+
+table .header:after {
+  float: right;
+  margin-top: 7px;
+  border-color: #ccc transparent;
+  border-style: solid;
+  border-width: 0 4px 4px;
+  content: "";
+  visibility: hidden;
+}
+
+table .header:hover:after {
+  visibility: visible;
+}
+
+table .headerSortUp,
+table .headerSortDown {
+  color: #049cdb;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #eeeeee;
+}
+
+table .headerSortUp:after,
+table .headerSortDown:after {
+  border-color: #333333 transparent;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  visibility: visible;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+table .headerSortUp:after {
+  border-top: 4px solid #333333;
+  border-right: 4px solid transparent;
+  border-bottom: none;
+  border-left: 4px solid transparent;
+}
+
 .pull-right {
   float: right;
 }
