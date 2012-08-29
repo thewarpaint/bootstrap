@@ -1,0 +1,289 @@
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>{{_i}}manoderecha{{/i}}</h1>
+    <p class="lead">{{_i}}Estilos específicos para la famosa <a href="http://manoderecha.mx" target="_blank">aplicación de administración de proyectos</a>.{{/i}}</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#botones"><i class="icon-chevron-right"></i> {{_i}}Botones inactivos {{/i}}</a></li>
+          <li><a href="#tablesorter"><i class="icon-chevron-right"></i> {{_i}}Tablesorter{{/i}}</a></li>
+          <li><a href="#alarmas"><i class="icon-chevron-right"></i> {{_i}}Alarmas{{/i}}</a></li>
+          <li><a href="#estados"><i class="icon-chevron-right"></i> {{_i}}Estados{{/i}}</a></li>
+          <li><a href="#prioridades"><i class="icon-chevron-right"></i> {{_i}}Prioridades{{/i}}</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+			<!-- Botones
+			================================================== -->
+			<section id="botones">
+				<div class="page-header">
+					<h1>{{_i}}Botones{{/i}}</h1>
+				</div>
+
+				<h2>Botones default</h2>
+				<p>Sólo es necesario agregar la clase <code>btn-striped</code> al botón y asignar el atributo <code>disabled="disabled"</code>.</p>
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Botón</th>
+							<th>class="" disabled="disabled"</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><button class="btn btn-striped" href="#" disabled="disabled"><i class="icon-time"></i> Default</button></td>
+							<td><code>btn btn-striped</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-primary btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Primary</button></td>
+							<td><code>btn btn-primary btn-striped</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-info btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Info</button></td>
+							<td><code>btn btn-info btn-striped</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-success btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Success</button></td>
+							<td><code>btn btn-success btn-striped</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-warning btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Warning</button></td>
+							<td><code>btn btn-warning btn-striped</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-danger btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Danger</button></td>
+							<td><code>btn btn-danger btn-striped</code></td>
+						</tr>
+						<tr>
+							<td><button class="btn btn-inverse btn-striped" href="#" disabled="disabled"><i class="icon-time icon-white"></i> Inverse</button></td>
+							<td><code>btn btn-inverse btn-striped</code></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4>Iconos</h4>
+				<p>Los iconos con la clase <code>.active</code> se ocultarán cuando el botón esté desactivado.</p>
+				<p>Los iconos con la clase <code>.waiting</code> se mostrarán cuando el botón esté desactivado.</p>
+
+				<h4>CSS3</h4>
+				<p>El fondo a rayas de los botones y la transición son creados con CSS3, por lo que no estarán disponibles para navegadores antiguos.</p>
+			</section>
+
+
+			<!-- Tablesorter
+			================================================== -->
+			<section id="tablesorter">
+				<div class="page-header">
+					<h1>Tablesorter</h1>
+				</div>
+
+				<p>El plugin Tablesorter para jQuery se integra inmediatamente al framework.</p>
+				<table class="table table-bordered tablesorter">
+					<thead>
+						<tr>
+							<th>Lorem</th>
+							<th>Ipsum</th>
+							<th>Dolor sit amen</th>
+							<th>Dolore magna aliqua</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>consectetur</td>
+							<td>6.45</td>
+							<td>2014-12-20</td>
+							<td>Sed ut perspiciatis unde omnis iste natus error.</td>
+						</tr>
+						<tr>
+							<td>adipisicing elit</td>
+							<td>7.84</td>
+							<td>1978-11-15</td>
+							<td>Error sit voluptatem accusantium doloremque.</td>
+						</tr>
+						<tr>
+							<td>incididunt ut labore</td>
+							<td>9.51</td>
+							<td>2001-01-21</td>
+							<td>Nemo enim ipsam voluptatem quia voluptas.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Plugin</h3>
+				<p><a href="http://tablesorter.com/docs/#Download">Puedes descargar este componente aquí.</a></p>
+
+				<h3>No requiere imágenes</h3>
+				<p>Los indicadores de ordenamiento ascendente y descendente se generan con CSS, por lo que no requiere imágenes.</p>
+			</section>
+
+			<!-- Alarmas
+			================================================== -->
+			<section id="alarmas">
+				<div class="page-header">
+					<h1>{{_i}}Alarmas{{/i}}</h1>
+				</div>
+
+				<p>Se utilizan en toda la aplicación para llamar la atención sobre diferentes aspectos acerca de los cuáles es necesario realizar una acción, preventiva o correctiva.</p>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Alarma</th>
+							<th>Clase</th>
+							<th>Color</th>
+							<th>Descripción</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="notice-figure cell clickable">99</span></td>
+							<td><code></code></td>
+							<td><code></code></td>
+							<td>Indica un aspecto neutro, es decir, no es necesaria ninguna acción.</td>
+						</tr>
+						<tr>
+							<td><span class="notice-figure notice-success cell clickable">99</span></td>
+							<td><code>notice-success</code></td>
+							<td><code>@success</code></td>
+							<td>Indica un aspecto positivo.</td>
+						</tr>
+						<tr>
+							<td><span class="notice-figure notice-warning cell clickable">99</span></td>
+							<td><code>notice-warning</code></td>
+							<td><code>@warning</code></td>
+							<td>Indica advertencia, es necesario tomar una acción preventiva.</td>
+						</tr>
+						<tr>
+							<td><span class="notice-figure notice-alert cell clickable">99</span></td>
+							<td><code>notice-alert</code></td>
+							<td><code>@alert</code></td>
+							<td>Indica alerta, es necesario tomar una acción correctiva.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Estados
+			================================================== -->
+			<section id="estados">
+				<div class="page-header">
+					<h1>{{_i}}Estados{{/i}}</h1>
+				</div>
+
+				<p>... de una tarea.</p>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Estado</th>
+							<th>Descripción</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="label status" data-status="8"><i></i> Bandeja</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="10"><i></i> Revisión</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="4"><i></i> Aceptada</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="7"><i></i> Terminada</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="11"><i></i> Validada</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="1"><i></i> Referencia</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="3"><i></i> Algún día</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label status" data-status="2"><i></i> Basura</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td>
+<div class="btn-group select-widget"><span class="label status editable dropdown-toggle" data-toggle="dropdown" data-status="8"><i></i> Bandeja <b class="caret"></b></span>
+<ul class="dropdown-menu status"><li><a href="#" data-value="8"><i></i> Bandeja</a></li><li><a href="#" data-value="10"><i></i> Revisión</a></li><li><a href="#" data-value="4"><i></i> Aceptada</a></li><li><a href="#" data-value="7"><i></i> Terminada</a></li><li><a href="#" data-value="11"><i></i> Validada</a></li><li><a href="#" data-value="1"><i></i> Referencia</a></li><li><a href="#" data-value="3"><i></i> Algún día</a></li><li><a href="#" data-value="2"><i></i> Basura</a></li></ul><input type="hidden"></div>
+							</td>
+							<td>descr...</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Prioridades
+			================================================== -->
+			<section id="prioridades">
+				<div class="page-header">
+					<h1>{{_i}}Prioridades{{/i}}</h1>
+				</div>
+
+				<p>... de una tarea.</p>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Prioridad</th>
+							<th>Descripción</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="label priority" data-priority="1"><i></i> Urgente</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label priority" data-priority="2"> Muy Alta</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label priority" data-priority="3"> Alta</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label priority" data-priority="4"> Normal</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label priority" data-priority="5"> Baja</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td><span class="label priority" data-priority="6"> Muy Baja</span></td>
+							<td>descr...</td>
+						</tr>
+						<tr>
+							<td>
+<div class="btn-group select-widget"><span class="label priority editable dropdown-toggle" data-toggle="dropdown" data-priority="1"> Urgente <b class="caret"></b></span>
+<ul class="dropdown-menu priority"><li><a href="#" data-value="1"><i></i> Urgente</a></li><li><a href="#" data-value="2"><i></i> Muy Alta</a></li><li><a href="#" data-value="3"><i></i> Alta</a></li><li><a href="#" data-value="4"><i></i> Normal</a></li><li><a href="#" data-value="5"><i></i> Baja</a></li><li><a href="#" data-value="6"><i></i> Muy Baja</a></li></ul><input type="hidden"></div>
+							</td>
+							<td>descr...</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+      </div>{{! /span9 }}
+    </div>{{! row}}
+
+  </div>{{! /.container }}
