@@ -66,3 +66,283 @@ tr.disabled {
 	color: #999;
 	background-color: #eee;
 }
+
+// Priorities + Statuses
+// --------------------------------------------------
+span.label.status, span.label.priority {
+	display: inline-block;
+	cursor: default;
+	font-weight: normal;
+	font-size: 13px;
+
+	.user-select(none);
+}
+
+.round-indicator {
+	.border-radius(2px);
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+}
+
+// Statuses
+// --------------------------------------------------
+span.label.status {
+	background-color: @status-background;
+	color: @status-color;
+	border: 1px solid @status-border-color;
+	text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.75);
+	padding: 4px 6px 6px 4px;
+
+	i {
+		.round-indicator;
+		margin: 0 3px 0 2px;
+	}
+
+	&.editable {
+		.elementEditableGradient(@status-background);
+		.clickable;
+	}
+
+	.elementEditableCaret(#333);
+
+	&[data-status="1"] i {
+		background-color: @status-reference;
+	}
+
+	&[data-status="2"] i {
+		background-color: @status-trash;
+	}
+
+	&[data-status="3"] i {
+		background-color: @status-someday;
+	}
+
+	&[data-status="4"] i {
+		background-color: @status-accepted;
+	}
+
+	&[data-status="7"] i {
+		background-color: @status-finished;
+	}
+
+	&[data-status="8"] i {
+		background-color: @status-inbox;
+	}
+
+	&[data-status="10"] i {
+		background-color: @status-review;
+	}
+
+	&[data-status="11"] i {
+		background-color: @status-validated;
+	}
+}
+
+// Priorities
+// --------------------------------------------------
+span.label.priority {
+	border-style: solid;
+	border-width: 1px;
+	border-left-width: @priority-border-left;
+	padding: 4px 6px 6px;
+
+	&.editable {
+		.elementEditableCaret(#fff);
+		.clickable;
+	}
+
+	&[data-priority="1"] {
+		background-color: @priority-urgent;
+		border-color: darken(@priority-urgent, @priority-border-darken-by);
+		.elementEditableGradient(@priority-urgent);
+	}
+
+	&[data-priority="2"] {
+		background-color: @priority-too-high;
+		border-color: darken(@priority-too-high, @priority-border-darken-by);
+		.elementEditableGradient(@priority-too-high);
+	}
+
+	&[data-priority="3"] {
+		background-color: @priority-high;
+		border-color: darken(@priority-high, @priority-border-darken-by);
+		.elementEditableGradient(@priority-high);
+	}
+
+	&[data-priority="4"] {
+		background-color: @priority-normal;
+		border-color: darken(@priority-normal, @priority-border-darken-by);
+		.elementEditableGradient(@priority-normal);
+	}
+
+	&[data-priority="5"] {
+		background-color: @priority-low;
+		border-color: darken(@priority-low, @priority-border-darken-by);
+		.elementEditableGradient(@priority-low);
+	}
+
+	&[data-priority="6"] {
+		background-color: @priority-too-low;
+		border-color: darken(@priority-too-low, @priority-border-darken-by);
+		.elementEditableGradient(@priority-too-low);
+	}
+}
+
+
+.elementEditableGradient(@primary-color) {
+	&.editable {
+		#gradient > .vertical(lighten(@primary-color, 3%), darken(@primary-color, 7%));
+	}
+}
+
+.elementEditableCaret(@caretColor) {
+	.caret {
+		margin: 6px 1px 0;
+		border-top-color: @caretColor;
+		opacity: 0.75;
+	}
+
+	&:hover .caret {
+		opacity: 1;
+	}
+}
+
+// Select widget
+// --------------------------------------------------
+.select-widget {
+	display: inline-block;
+
+	.dropdown-menu {
+		a {
+			padding: 3px 10px;
+
+			&:hover {
+				color: #0088CC;
+				background-color: #eee;
+			}
+
+			i {
+				.round-indicator;
+				margin-right: 4px;
+			}
+		}
+
+		// statuses {
+		&.status [data-value="1"] i {
+			background-color: @status-reference;
+		}
+
+		&.status [data-value="2"] i {
+			background-color: @status-trash;
+		}
+
+		&.status [data-value="3"] i {
+			background-color: @status-someday;
+		}
+
+		&.status [data-value="4"] i {
+			background-color: @status-accepted;
+		}
+
+		&.status [data-value="7"] i {
+			background-color: @status-finished;
+		}
+
+		&.status [data-value="8"] i {
+			background-color: @status-inbox;
+		}
+
+		&.status [data-value="10"] i {
+			background-color: @status-review;
+		}
+
+		&.status [data-value="11"] i {
+			background-color: @status-validated;
+		}
+		// statuses }
+
+		// priorities {
+		&.priority [data-value="1"] i {
+			background-color: @priority-urgent;
+		}
+
+		&.priority [data-value="2"] i {
+			background-color: @priority-too-high;
+		}
+
+		&.priority [data-value="3"] i {
+			background-color: @priority-high;
+		}
+
+		&.priority [data-value="4"] i {
+			background-color: @priority-normal;
+		}
+
+		&.priority [data-value="5"] i {
+			background-color: @priority-low;
+		}
+
+		&.priority [data-value="6"] i {
+			background-color: @priority-too-low;
+		}
+		// priorities }
+	}
+}
+
+// Notice
+// --------------------------------------------------
+
+.notice-figure {
+	color: #333;
+	text-align: center;
+	font-size: 20px;
+	height: 24px;
+	padding-top: 6px;
+	display: inline-block;
+	.border-radius(@notice-border-radius);
+
+	&.cell {
+		width: 35px;
+	}
+}
+
+.notice-alert {
+	background-color: @notice-alert !important;
+	color: @notice-light-text !important;
+}
+
+.notice-warning {
+	background-color: @notice-warning !important;
+	color: @notice-light-text !important;
+}
+
+.notice-success {
+	background-color: @notice-success !important;
+	color: @notice-light-text !important;
+}
+
+.notice-info {
+	background-color: @notice-info !important;
+	color: @notice-light-text !important;
+}
+
+.notice-score {
+	span {
+		//background-color: #eee;
+		//border: 1px solid #ddd;
+		//border-right-width: 0;
+		margin-right: 5px;
+		//.border-radius(0);
+
+		/*&:first-child {
+			.border-radius(@notice-border-radius, 0, 0, @notice-border-radius);
+		}*/
+
+		&:last-child {
+			//.border-radius(0, @notice-border-radius, @notice-border-radius, 0);
+			//border-right-width: 1px;
+			margin-right: 0px;
+		}
+	}
+}
